@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="23" class="java.beans.XMLDecoder">
+ <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+  <void property="nodoPrimero">
+   <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble0">
+    <void property="siguienteNodo">
+     <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble1">
+      <void property="anteriorNodo">
+       <object idref="NodoDoble0"/>
+      </void>
+      <void property="siguienteNodo">
+       <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble2">
+        <void property="anteriorNodo">
+         <object idref="NodoDoble1"/>
+        </void>
+        <void property="siguienteNodo">
+         <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble3">
+          <void property="anteriorNodo">
+           <object idref="NodoDoble2"/>
+          </void>
+          <void property="siguienteNodo">
+           <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble4">
+            <void property="anteriorNodo">
+             <object idref="NodoDoble3"/>
+            </void>
+            <void property="siguienteNodo">
+             <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble5">
+              <void property="anteriorNodo">
+               <object idref="NodoDoble4"/>
+              </void>
+              <void property="siguienteNodo">
+               <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble6">
+                <void property="anteriorNodo">
+                 <object idref="NodoDoble5"/>
+                </void>
+                <void property="valorNodo">
+                 <object class="org.example.modelo.Proceso">
+                  <void property="descripcion">
+                   <string>dsfghjk</string>
+                  </void>
+                  <void property="id">
+                   <string>333</string>
+                  </void>
+                  <void property="listaActividades">
+                   <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+                    <void property="nodoPrimero">
+                     <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble7">
+                      <void property="siguienteNodo">
+                       <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble8">
+                        <void property="anteriorNodo">
+                         <object idref="NodoDoble7"/>
+                        </void>
+                        <void property="valorNodo">
+                         <object class="org.example.modelo.Actividad">
+                          <void property="descripcion">
+                           <string>aasas	</string>
+                          </void>
+                          <void property="nombre">
+                           <string>hola</string>
+                          </void>
+                          <void property="obligatorio">
+                           <boolean>true</boolean>
+                          </void>
+                          <void property="tareas">
+                           <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                          </void>
+                         </object>
+                        </void>
+                       </object>
+                      </void>
+                      <void property="valorNodo">
+                       <object class="org.example.modelo.Actividad">
+                        <void property="descripcion">
+                         <string>sdfghg</string>
+                        </void>
+                        <void property="nombre">
+                         <string>asdfgh</string>
+                        </void>
+                        <void property="obligatorio">
+                         <boolean>true</boolean>
+                        </void>
+                        <void property="tareas">
+                         <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="nodoUltimo">
+                     <object idref="NodoDoble8"/>
+                    </void>
+                    <void property="tamanio">
+                     <int>2</int>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="nombre">
+                   <string>robi</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="valorNodo">
+               <object class="org.example.modelo.Proceso">
+                <void property="descripcion">
+                 <string>sdkjhfskjdhfkjshdfksa</string>
+                </void>
+                <void property="id">
+                 <string>999</string>
+                </void>
+                <void property="listaActividades">
+                 <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+                  <void property="nodoPrimero">
+                   <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble9">
+                    <void property="valorNodo">
+                     <object class="org.example.modelo.Actividad">
+                      <void property="descripcion">
+                       <string>hpamde mierda</string>
+                      </void>
+                      <void property="nombre">
+                       <string>micho</string>
+                      </void>
+                      <void property="obligatorio">
+                       <boolean>true</boolean>
+                      </void>
+                      <void property="tareas">
+                       <object class="org.example.recursos.listasEnlazadasGenericas.Cola" id="Cola0">
+                        <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                         <string>nodoPrimero</string>
+                         <void method="set">
+                          <object idref="Cola0"/>
+                          <object class="org.example.recursos.listasEnlazadasGenericas.Nodo">
+                           <void property="siguienteNodo">
+                            <object class="org.example.recursos.listasEnlazadasGenericas.Nodo" id="Nodo0">
+                             <void property="valorNodo">
+                              <object class="org.example.modelo.Tarea">
+                               <void property="descripcion">
+                                <string>hskjfhkkjshfkjshfkjsdf</string>
+                               </void>
+                               <void property="obligatorio">
+                                <boolean>true</boolean>
+                               </void>
+                               <void property="tiempoMaximo">
+                                <int>8</int>
+                               </void>
+                               <void property="tiempoMinimo">
+                                <int>10</int>
+                               </void>
+                              </object>
+                             </void>
+                            </object>
+                           </void>
+                           <void property="valorNodo">
+                            <object class="org.example.modelo.Tarea">
+                             <void property="descripcion">
+                              <string>akhaskhakjdhkjahdkja</string>
+                             </void>
+                             <void property="obligatorio">
+                              <boolean>true</boolean>
+                             </void>
+                             <void property="tiempoMaximo">
+                              <int>7</int>
+                             </void>
+                             <void property="tiempoMinimo">
+                              <int>8</int>
+                             </void>
+                            </object>
+                           </void>
+                          </object>
+                         </void>
+                        </void>
+                        <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                         <string>nodoUltimo</string>
+                         <void method="set">
+                          <object idref="Cola0"/>
+                          <object idref="Nodo0"/>
+                         </void>
+                        </void>
+                        <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                         <string>tamanio</string>
+                         <void method="set">
+                          <object idref="Cola0"/>
+                          <int>2</int>
+                         </void>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="nodoUltimo">
+                   <object idref="NodoDoble9"/>
+                  </void>
+                  <void property="tamanio">
+                   <int>1</int>
+                  </void>
+                 </object>
+                </void>
+                <void property="nombre">
+                 <string>la amo</string>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+            <void property="valorNodo">
+             <object class="org.example.modelo.Proceso">
+              <void property="descripcion">
+               <string>fkhjkjhasfdsfkadjhl</string>
+              </void>
+              <void property="id">
+               <string>666</string>
+              </void>
+              <void property="listaActividades">
+               <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+                <void property="nodoPrimero">
+                 <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble10">
+                  <void property="valorNodo">
+                   <object class="org.example.modelo.Actividad">
+                    <void property="descripcion">
+                     <string>qwertyuio</string>
+                    </void>
+                    <void property="nombre">
+                     <string>skkshkfjsha</string>
+                    </void>
+                    <void property="obligatorio">
+                     <boolean>true</boolean>
+                    </void>
+                    <void property="tareas">
+                     <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="nodoUltimo">
+                 <object idref="NodoDoble10"/>
+                </void>
+                <void property="tamanio">
+                 <int>1</int>
+                </void>
+               </object>
+              </void>
+              <void property="nombre">
+               <string>se hizo</string>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="valorNodo">
+           <object class="org.example.modelo.Proceso">
+            <void property="descripcion">
+             <string>agkhadskjfhaskjfhklajshf</string>
+            </void>
+            <void property="id">
+             <string>777</string>
+            </void>
+            <void property="listaActividades">
+             <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+              <void property="nodoPrimero">
+               <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble11">
+                <void property="valorNodo">
+                 <object class="org.example.modelo.Actividad">
+                  <void property="descripcion">
+                   <string>asdfgh</string>
+                  </void>
+                  <void property="nombre">
+                   <string>k,kjasljdlas</string>
+                  </void>
+                  <void property="obligatorio">
+                   <boolean>true</boolean>
+                  </void>
+                  <void property="tareas">
+                   <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="nodoUltimo">
+               <object idref="NodoDoble11"/>
+              </void>
+              <void property="tamanio">
+               <int>1</int>
+              </void>
+             </object>
+            </void>
+            <void property="nombre">
+             <string>hola como esta </string>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="valorNodo">
+         <object class="org.example.modelo.Proceso">
+          <void property="descripcion">
+           <string>afagaehrah</string>
+          </void>
+          <void property="id">
+           <string>555</string>
+          </void>
+          <void property="listaActividades">
+           <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+            <void property="nodoPrimero">
+             <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble12">
+              <void property="siguienteNodo">
+               <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble13">
+                <void property="anteriorNodo">
+                 <object idref="NodoDoble12"/>
+                </void>
+                <void property="siguienteNodo">
+                 <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble14">
+                  <void property="anteriorNodo">
+                   <object idref="NodoDoble13"/>
+                  </void>
+                  <void property="valorNodo">
+                   <object class="org.example.modelo.Actividad">
+                    <void property="descripcion">
+                     <string>SAFASDF</string>
+                    </void>
+                    <void property="nombre">
+                     <string>AGF</string>
+                    </void>
+                    <void property="obligatorio">
+                     <boolean>true</boolean>
+                    </void>
+                    <void property="tareas">
+                     <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="valorNodo">
+                 <object class="org.example.modelo.Actividad">
+                  <void property="descripcion">
+                   <string>assssssssssss</string>
+                  </void>
+                  <void property="nombre">
+                   <string>holaaaaaaaaaaa</string>
+                  </void>
+                  <void property="obligatorio">
+                   <boolean>true</boolean>
+                  </void>
+                  <void property="tareas">
+                   <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="valorNodo">
+               <object class="org.example.modelo.Actividad">
+                <void property="descripcion">
+                 <string>puirebva dadadadad</string>
+                </void>
+                <void property="nombre">
+                 <string>hola </string>
+                </void>
+                <void property="obligatorio">
+                 <boolean>true</boolean>
+                </void>
+                <void property="tareas">
+                 <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+            <void property="nodoUltimo">
+             <object idref="NodoDoble14"/>
+            </void>
+            <void property="tamanio">
+             <int>3</int>
+            </void>
+           </object>
+          </void>
+          <void property="nombre">
+           <string>dsdas</string>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="valorNodo">
+       <object class="org.example.modelo.Proceso">
+        <void property="descripcion">
+         <string>Almuerzos   bien balanceados</string>
+        </void>
+        <void property="id">
+         <string>443</string>
+        </void>
+        <void property="listaActividades">
+         <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+          <void property="nodoPrimero">
+           <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble15">
+            <void property="valorNodo">
+             <object class="org.example.modelo.Actividad">
+              <void property="descripcion">
+               <string>ahadfh</string>
+              </void>
+              <void property="nombre">
+               <string>asfgtshg</string>
+              </void>
+              <void property="obligatorio">
+               <boolean>true</boolean>
+              </void>
+              <void property="tareas">
+               <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="nodoUltimo">
+           <object idref="NodoDoble15"/>
+          </void>
+          <void property="tamanio">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+        <void property="nombre">
+         <string>Almuerzos</string>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="valorNodo">
+     <object class="org.example.modelo.Proceso">
+      <void property="descripcion">
+       <string>Desayunos bien balanceados</string>
+      </void>
+      <void property="id">
+       <string>123</string>
+      </void>
+      <void property="listaActividades">
+       <object class="org.example.recursos.listasEnlazadasGenericas.ListaDoble">
+        <void property="nodoPrimero">
+         <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble16">
+          <void property="siguienteNodo">
+           <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble17">
+            <void property="anteriorNodo">
+             <object idref="NodoDoble16"/>
+            </void>
+            <void property="siguienteNodo">
+             <object class="org.example.recursos.listasEnlazadasGenericas.NodoDoble" id="NodoDoble18">
+              <void property="anteriorNodo">
+               <object idref="NodoDoble17"/>
+              </void>
+              <void property="valorNodo">
+               <object class="org.example.modelo.Actividad">
+                <void property="descripcion">
+                 <string>akdjlfasjfljaslkdf</string>
+                </void>
+                <void property="nombre">
+                 <string>leche</string>
+                </void>
+                <void property="obligatorio">
+                 <boolean>true</boolean>
+                </void>
+                <void property="tareas">
+                 <object class="org.example.recursos.listasEnlazadasGenericas.Cola"/>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+            <void property="valorNodo">
+             <object class="org.example.modelo.Actividad">
+              <void property="descripcion">
+               <string>Huevos para acompaÃ±ar desayunos</string>
+              </void>
+              <void property="nombre">
+               <string>Huevos</string>
+              </void>
+              <void property="obligatorio">
+               <boolean>true</boolean>
+              </void>
+              <void property="tareas">
+               <object class="org.example.recursos.listasEnlazadasGenericas.Cola" id="Cola1">
+                <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                 <string>nodoPrimero</string>
+                 <void method="set">
+                  <object idref="Cola1"/>
+                  <object class="org.example.recursos.listasEnlazadasGenericas.Nodo">
+                   <void property="siguienteNodo">
+                    <object class="org.example.recursos.listasEnlazadasGenericas.Nodo" id="Nodo1">
+                     <void property="valorNodo">
+                      <object class="org.example.modelo.Tarea">
+                       <void property="descripcion">
+                        <string>sashash</string>
+                       </void>
+                       <void property="obligatorio">
+                        <boolean>true</boolean>
+                       </void>
+                       <void property="tiempoMaximo">
+                        <int>8</int>
+                       </void>
+                       <void property="tiempoMinimo">
+                        <int>9</int>
+                       </void>
+                      </object>
+                     </void>
+                    </object>
+                   </void>
+                   <void property="valorNodo">
+                    <object class="org.example.modelo.Tarea">
+                     <void property="descripcion">
+                      <string>ccc</string>
+                     </void>
+                     <void property="tiempoMaximo">
+                      <int>44</int>
+                     </void>
+                     <void property="tiempoMinimo">
+                      <int>444</int>
+                     </void>
+                    </object>
+                   </void>
+                  </object>
+                 </void>
+                </void>
+                <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                 <string>nodoUltimo</string>
+                 <void method="set">
+                  <object idref="Cola1"/>
+                  <object idref="Nodo1"/>
+                 </void>
+                </void>
+                <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+                 <string>tamanio</string>
+                 <void method="set">
+                  <object idref="Cola1"/>
+                  <int>2</int>
+                 </void>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="valorNodo">
+           <object class="org.example.modelo.Actividad">
+            <void property="descripcion">
+             <string>Bebida para acompaÃ±ar desayunos</string>
+            </void>
+            <void property="nombre">
+             <string>Cafe</string>
+            </void>
+            <void property="obligatorio">
+             <boolean>true</boolean>
+            </void>
+            <void property="tareas">
+             <object class="org.example.recursos.listasEnlazadasGenericas.Cola" id="Cola2">
+              <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+               <string>nodoPrimero</string>
+               <void method="set">
+                <object idref="Cola2"/>
+                <object class="org.example.recursos.listasEnlazadasGenericas.Nodo">
+                 <void property="siguienteNodo">
+                  <object class="org.example.recursos.listasEnlazadasGenericas.Nodo">
+                   <void property="siguienteNodo">
+                    <object class="org.example.recursos.listasEnlazadasGenericas.Nodo">
+                     <void property="siguienteNodo">
+                      <object class="org.example.recursos.listasEnlazadasGenericas.Nodo" id="Nodo2">
+                       <void property="valorNodo">
+                        <object class="org.example.modelo.Tarea">
+                         <void property="descripcion">
+                          <string>sesf</string>
+                         </void>
+                         <void property="obligatorio">
+                          <boolean>true</boolean>
+                         </void>
+                         <void property="tiempoMaximo">
+                          <int>23</int>
+                         </void>
+                         <void property="tiempoMinimo">
+                          <int>24</int>
+                         </void>
+                        </object>
+                       </void>
+                      </object>
+                     </void>
+                     <void property="valorNodo">
+                      <object class="org.example.modelo.Tarea">
+                       <void property="descripcion">
+                        <string>sdfsd</string>
+                       </void>
+                       <void property="obligatorio">
+                        <boolean>true</boolean>
+                       </void>
+                       <void property="tiempoMaximo">
+                        <int>11</int>
+                       </void>
+                       <void property="tiempoMinimo">
+                        <int>34</int>
+                       </void>
+                      </object>
+                     </void>
+                    </object>
+                   </void>
+                   <void property="valorNodo">
+                    <object class="org.example.modelo.Tarea">
+                     <void property="descripcion">
+                      <string>dsfasf</string>
+                     </void>
+                     <void property="obligatorio">
+                      <boolean>true</boolean>
+                     </void>
+                     <void property="tiempoMaximo">
+                      <int>12</int>
+                     </void>
+                     <void property="tiempoMinimo">
+                      <int>43</int>
+                     </void>
+                    </object>
+                   </void>
+                  </object>
+                 </void>
+                 <void property="valorNodo">
+                  <object class="org.example.modelo.Tarea">
+                   <void property="descripcion">
+                    <string>sfbsdfg</string>
+                   </void>
+                   <void property="obligatorio">
+                    <boolean>true</boolean>
+                   </void>
+                   <void property="tiempoMaximo">
+                    <int>23</int>
+                   </void>
+                   <void property="tiempoMinimo">
+                    <int>23</int>
+                   </void>
+                  </object>
+                 </void>
+                </object>
+               </void>
+              </void>
+              <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+               <string>nodoUltimo</string>
+               <void method="set">
+                <object idref="Cola2"/>
+                <object idref="Nodo2"/>
+               </void>
+              </void>
+              <void class="org.example.recursos.listasEnlazadasGenericas.Cola" method="getField">
+               <string>tamanio</string>
+               <void method="set">
+                <object idref="Cola2"/>
+                <int>4</int>
+               </void>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="nodoUltimo">
+         <object idref="NodoDoble18"/>
+        </void>
+        <void property="tamanio">
+         <int>3</int>
+        </void>
+       </object>
+      </void>
+      <void property="nombre">
+       <string>Desayunos</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="nodoUltimo">
+   <object idref="NodoDoble6"/>
+  </void>
+  <void property="tamanio">
+   <int>7</int>
+  </void>
+ </object>
+</java>

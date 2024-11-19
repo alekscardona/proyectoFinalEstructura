@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="703.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controlador.ExplorarController">
+    <tabs>
+        <Tab text="Visor de Informacion">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Visor de informacion">
+                            <font>
+                                <Font name="System Bold Italic" size="35.0" />
+                            </font>
+                        </Label>
+                        <Separator layoutX="14.0" layoutY="65.0" prefHeight="2.0" prefWidth="570.0" />
+                        <Label layoutX="67.0" layoutY="96.0" text="Procesos:">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="tblProcesos1" layoutX="22.0" layoutY="129.0" prefHeight="239.0" prefWidth="335.0">
+                            <columns>
+                                <TableColumn fx:id="colID1" prefWidth="56.0" text="ID" />
+                                <TableColumn fx:id="colNombreProceso1" prefWidth="89.0" text="Nombre" />
+                                <TableColumn fx:id="colDescripcion1" prefWidth="189.0" text="Descripción" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="22.0" layoutY="381.0" mnemonicParsing="false" onAction="#calcularTiempoProcesoAction" prefHeight="35.0" prefWidth="136.0" text="Tiempo Estimado" />
+                        <TextField fx:id="buscarActividad" layoutX="449.0" layoutY="157.0" />
+                        <Label layoutX="449.0" layoutY="125.0" prefHeight="32.0" prefWidth="167.0" text="Buscar Actividad">
+                            <font>
+                                <Font name="System Italic" size="19.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="620.0" layoutY="157.0" mnemonicParsing="false" onAction="#buscarAct" prefHeight="24.0" prefWidth="63.0" text="buscar" />
+                        <Label layoutX="450.0" layoutY="193.0" prefHeight="28.0" prefWidth="163.0" text="Buscar tarea">
+                            <font>
+                                <Font name="System Italic" size="19.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="buscarTarea" layoutX="449.0" layoutY="229.0" />
+                        <Button layoutX="620.0" layoutY="229.0" mnemonicParsing="false" onAction="#buscarTar" prefHeight="25.0" prefWidth="62.0" text="buscar" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab disable="true" text="Gestion de Procesos">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="621.0">
+                    <children>
+                        <Label layoutX="247.0" layoutY="14.0" text="Procesos">
+                            <font>
+                                <Font name="System Bold Italic" size="35.0" />
+                            </font>
+                        </Label>
+                        <Separator layoutX="16.0" layoutY="64.0" prefHeight="0.0" prefWidth="634.0" style="-fx-background-color: #000000;" />
+                        <Label layoutX="184.0" layoutY="97.0" prefHeight="32.0" prefWidth="178.0" text="Lista de procesos:">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="tblProcesos" layoutX="184.0" layoutY="137.0" prefHeight="239.0" prefWidth="335.0">
+                            <columns>
+                                <TableColumn fx:id="colID" prefWidth="56.0" text="ID" />
+                                <TableColumn fx:id="colNombreProceso" prefWidth="89.0" text="Nombre" />
+                                <TableColumn fx:id="colDescripcion" prefWidth="189.0" text="Descripción" />
+                            </columns>
+                        </TableView>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Gestion de Actividades">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="242.0" layoutY="14.0" text="Actividades">
+                            <font>
+                                <Font name="System Bold Italic" size="35.0" />
+                            </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="63.0" prefHeight="0.0" prefWidth="653.0" style="-fx-background-color: #000000;" />
+                        <Label layoutX="25.0" layoutY="77.0" prefHeight="21.0" prefWidth="303.0" text="Elija un proceso para ver sus actividades :">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="comboBoxProcesos" layoutX="362.0" layoutY="75.0" prefWidth="150.0" promptText="Seleccione uno" />
+                        <Separator layoutX="25.0" layoutY="111.0" prefHeight="0.0" prefWidth="624.0" />
+                        <TableView fx:id="tblActividades" layoutX="170.0" layoutY="136.0" prefHeight="239.0" prefWidth="358.0">
+                            <columns>
+                                <TableColumn fx:id="colNombreActividad" prefWidth="95.0" text="Nombre" />
+                                <TableColumn fx:id="colDescripcionActividad" prefWidth="161.0" text="Descripción" />
+                                <TableColumn fx:id="colObligatorioActividad" prefWidth="97.0" text="Obligatorio" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Gestion de Tareas">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="600.0">
+                    <children>
+                        <ScrollPane layoutX="205.0" layoutY="173.0" prefHeight="203.0" prefWidth="337.0">
+                            <content>
+                                <TableView fx:id="tblTareas" prefHeight="200.0" prefWidth="336.0">
+                                    <columns>
+                                        <TableColumn fx:id="colDescripcionTarea" prefWidth="119.0" text="Descripcion" />
+                                        <TableColumn fx:id="colObligatorioTarea" prefWidth="68.0" text="Obligatoria" />
+                                        <TableColumn fx:id="colTiempoMaximoTarea" prefWidth="67.0" text="T. Maximo" />
+                                        <TableColumn fx:id="colTiempoMinimoTarea" prefWidth="68.0" text="T.Minimo" />
+                                    </columns>
+                                </TableView>
+                            </content>
+                        </ScrollPane>
+                        <Label layoutX="263.0" layoutY="14.0" text="Tareas">
+                            <font>
+                                <Font name="System Bold Italic" size="35.0" />
+                            </font>
+                        </Label>
+                        <Separator layoutX="25.0" layoutY="63.0" prefHeight="4.0" prefWidth="626.0" style="-fx-background-color: #000000;" />
+                        <Label layoutX="25.0" layoutY="77.0" prefHeight="21.0" prefWidth="118.0" text="Elija un proceso">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="comboBoxProcesos1" layoutX="144.0" layoutY="75.0" prefWidth="150.0" promptText="Seleccione uno" />
+                        <Separator layoutX="25.0" layoutY="111.0" prefHeight="0.0" prefWidth="624.0" />
+                        <ComboBox fx:id="comboBoxActividades" layoutX="472.0" layoutY="75.0" prefWidth="150.0" promptText="Seleccione uno" />
+                        <Label layoutX="328.0" layoutY="77.0" prefHeight="21.0" prefWidth="134.0" text="Elija una Actividad">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
